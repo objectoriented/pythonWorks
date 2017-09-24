@@ -11,9 +11,16 @@ def TextIn(textString, charCount=0):
     #https://docs.python.org/3/library/stdtypes.html#str.split
     print(str(textString))
     for i in str(textString):
-        arrayVar.append(i)
-        charCount += 1
-        #discord counts spaces
+        # discord counts white spaces
+        if charCount <= varSplit:
+            charCount += 1
+            arrayVar.append(i)
+        else:
+            break
+
+    for i in range(varSplit):
+        print(str(arrayVar[i]), end=" ")
+
 
     print(str(arrayVar))
     print(charCount)
