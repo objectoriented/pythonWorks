@@ -6,23 +6,39 @@ stringVar = ""
 arrayVar = []
 varSplit = 2000
 charCount = 0
+charMaxCount = 0
 
-def TextIn(textString, charCount=0):
+def TextIn(textString, charMaxCount=0, charCount=0):
     #https://docs.python.org/3/library/stdtypes.html#str.split
-    print(str(textString))
+    #print(str(textString))
     for i in str(textString):
         # discord counts white spaces
-        if charCount <= varSplit:
-            charCount += 1
+        if charMaxCount <= varSplit:
+            charMaxCount += 1
             arrayVar.append(i)
         else:
+            #arrayVar.index("")
             break
 
     for i in range(varSplit):
-        print(str(arrayVar[i]), end=" ")
+        print(str(arrayVar[i]), end="")
 
 
+    print("\n")
     print(str(arrayVar))
     print(charCount)
 
-TextIn("Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.")
+TextIn(""" 
+“I’ll have to find a potential apprentice to do something about that,” Medivh mused, stretching Khadgar’s palm between his hands and running his thumbs along the heel of his hand. “Someone impudent, impetuous, confident, intelligent, headstrong, overachieving, and stubborn to a fault, perhaps.”
+Khadgar chuckled. “Sounds familiar. I’m sure you’ll find exactly who you need.”
+Medivh kissed Khadgar’s palm. “No doubt,” he said softly. “And once the library is organized again, I can take that apprentice to my bed, and spoil him.”
+Khadgar blushed. “I –“
+Medivh shushed him with a finger against his lips, kissing the inside of Khadgar’s wrist, then the inside of his elbow. Khadgar closed his eyes, shivering slightly. “Enough talking,” Medivh murmured, leaning to touch his lips to Khadgar’s. “There are more important things that should be coming out of your mouth than work talk.” He kissed down the younger mage’s throat, chuckling as Khadgar’s head lifted and offered more space. His hands traced nonsense along shoulders and chest, followed by soft kisses.
+Medivh’s lips and fingers found sensitive spots and exploited them fully, a brush of fingertip here, a light scrape of nail there, a nip following the ghosting of lips. He worked his way down Khadgar’s body, smiling wickedly at the way his apprentice’s hands curled into the fabric beneath them, twined in the comforter white knuckled and trembling. “Let me hear you,” he murmured against the skin of his hip. “That Mageroyal must be working by now, hm?”
+Khadgar sighed sharply, the barest hint of a moan slipping past. “Medivh,” he murmured. “I…” Medivh chuckled, biting at the top of one thigh and drawing a yelp.
+“This isn’t part of the Game. You are allowed to retaliate, remember…” Medivh reminded him.
+“When you turn my mind to mush like this? You want me to do more than ju—Ah!” Khadgar yelped again as the other thigh was nipped, then soothed with a swipe of Medivh’s tongue. The Mageroyal was indeed doing its job; he was half-hard already.
+“Than just feel? Fair.” Medivh leaned up, running his tongue along Khadgar’s tip, teasing his former apprentice into full hardness – and drawing a darker moan, and a soft curse in the process. “Light, the things you do to me,” he murmured, nipping at the skin of Khadgar’s stomach. “You make me want to throw my intentions out the window…”
+“Why don’t you?” Khadgar shot back, breathless.
+“Don’t tempt me,” Medivh hissed, biting down on one nipple sharply and shuddering at Khadgar’s cry. “Oh, don’t tempt me.” He leaned to bite the other, then looked up to admire his work. Khadgar’s eyes were as dark as twilight, already glowing faintly. The little marks against his skin where Medivh had bitten were reddening beautifully. His chest rose and fell rapidly, though evenly. His cock twitched with impatience, his essence beading at the tip.
+""")
