@@ -1,35 +1,8 @@
-import io
+##import io
 import string
 import array
 
-stringVar = ""
-arrayVar = []
-varSplit = 2000
-charCount = 0
-charMaxCount = 0
-
-def TextIn(textString, charMaxCount=0, charCount=0):
-    #https://docs.python.org/3/library/stdtypes.html#str.split
-    #print(str(textString))
-    for i in str(textString):
-        # discord counts white spaces
-        if charMaxCount <= varSplit:
-            charMaxCount += 1
-            arrayVar.append(i)
-        else:
-            #arrayVar.index("")
-            break
-
-    for i in range(varSplit):
-        print(str(arrayVar[i]), end="")
-
-
-    print("\n")
-    print(str(arrayVar))
-    print(charCount)
-
-TextIn(""" 
-“I’ll have to find a potential apprentice to do something about that,” Medivh mused, stretching Khadgar’s palm between his hands and running his thumbs along the heel of his hand. “Someone impudent, impetuous, confident, intelligent, headstrong, overachieving, and stubborn to a fault, perhaps.”
+testText = """“I’ll have to find a potential apprentice to do something about that,” Medivh mused, stretching Khadgar’s palm between his hands and running his thumbs along the heel of his hand. “Someone impudent, impetuous, confident, intelligent, headstrong, overachieving, and stubborn to a fault, perhaps.”
 Khadgar chuckled. “Sounds familiar. I’m sure you’ll find exactly who you need.”
 Medivh kissed Khadgar’s palm. “No doubt,” he said softly. “And once the library is organized again, I can take that apprentice to my bed, and spoil him.”
 Khadgar blushed. “I –“
@@ -41,4 +14,38 @@ Khadgar sighed sharply, the barest hint of a moan slipping past. “Medivh,” h
 “Than just feel? Fair.” Medivh leaned up, running his tongue along Khadgar’s tip, teasing his former apprentice into full hardness – and drawing a darker moan, and a soft curse in the process. “Light, the things you do to me,” he murmured, nipping at the skin of Khadgar’s stomach. “You make me want to throw my intentions out the window…”
 “Why don’t you?” Khadgar shot back, breathless.
 “Don’t tempt me,” Medivh hissed, biting down on one nipple sharply and shuddering at Khadgar’s cry. “Oh, don’t tempt me.” He leaned to bite the other, then looked up to admire his work. Khadgar’s eyes were as dark as twilight, already glowing faintly. The little marks against his skin where Medivh had bitten were reddening beautifully. His chest rose and fell rapidly, though evenly. His cock twitched with impatience, his essence beading at the tip.
-""")
+ """
+stringVar = ""
+arrayVar = []
+varSplit = 2000
+charCount = 0
+charMaxCount = 0
+
+def TextIn(textString, charMaxCount=0, charCount=0):
+    #print(str(textString))
+    #charCount = len(testText)
+    print(varSplit)
+    while charCount != len(textString):
+        charMaxCount = 0
+
+        for i in str(textString):
+            # discord counts white spaces
+            if charMaxCount <= len(textString):
+                charCount += 1
+                charMaxCount += 1
+                arrayVar.append(i)
+        for i in range(varSplit):
+            print(str(arrayVar[i]), end="")
+
+
+
+
+    print("\n")
+    #print(str(arrayVar))
+    print(charMaxCount)
+    if varSplit == textString:
+        print("true")
+    else:
+        print("false")
+
+TextIn(testText)
