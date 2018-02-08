@@ -1,4 +1,4 @@
-##import io
+import io
 import string
 import array
 
@@ -22,30 +22,27 @@ charCount = 0
 charMaxCount = 0
 
 def TextIn(textString, charMaxCount=0, charCount=0):
-    #print(str(textString))
+    file = open("testwrite.txt", "a+", encoding="utf-8")
+    file.write("\n _START LINE_ \n \n")
+    print(len(textString))
     #charCount = len(testText)
     print(varSplit)
-    while charCount != len(textString):
-        charMaxCount = 0
+    #while (charCount <= len(textString)):
+    charMaxCount = 0
 
-        for i in str(textString):
-            # discord counts white spaces
-            if charMaxCount <= len(textString):
-                charCount += 1
-                charMaxCount += 1
-                arrayVar.append(i)
-        for i in range(varSplit):
-            print(str(arrayVar[i]), end="")
+    for i in textString:
+        # discord counts white spaces
+        charMaxCount += 1
+        arrayVar.append(i)
 
 
-
+    for i in range(varSplit):
+        print(str(arrayVar[i]), end="")
+        file.write((str(arrayVar[i])))
+        charCount += 1
 
     print("\n")
-    #print(str(arrayVar))
     print(charMaxCount)
-    if varSplit == textString:
-        print("true")
-    else:
-        print("false")
+    print(varSplit)
 
 TextIn(testText)
