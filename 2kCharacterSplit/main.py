@@ -35,5 +35,4 @@ def TextIn(textString, charMaxCount=0, charCount=0):
     print("Number of characters being processed: " + str(charMaxCount))
     print("Number of posts to send entire message: " + str(numPosts))
 
-
 TextIn(testText)
