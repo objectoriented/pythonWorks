@@ -12,9 +12,10 @@ varSplit = 2000
 charCount = 0
 charMaxCount = 0
 numPosts = 0
+textCon = 0
 
-def TextIn(textString, charMaxCount=0, charCount=0):
-    charMaxCount = 0
+
+def TextIn(textString, charMaxCount=0, charCount=0, textCon=0):
 
     for i in textString:
         # discord counts white spaces
@@ -23,10 +24,14 @@ def TextIn(textString, charMaxCount=0, charCount=0):
     notComplete = True
     programFileOut.write("\n")
     while(notComplete):
-        if(charCount < charMaxCount):
+        if(charCount != charMaxCount):
             print(str(arrayVar[charCount]), end="")
             programFileOut.write((str(arrayVar[charCount])))
             charCount += 1
+        elif((charCount == charMaxCount) and (textCon < 1)):
+            programFileOut.write("\n ------------NEW POST------------")
+            textCon += 1
+
         else:
             numPosts = (math.ceil((len(textString) / 2000)))
             notComplete = False
